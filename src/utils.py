@@ -42,7 +42,6 @@ def get_from_platform(hh_api, sj_api):
         search_query = input("Введите поисковый запрос: ")
         if hh_api:
             hh_vacancies = hh_api.get_vacancies(search_query)
-            print(hh_vacancies)
             return hh_vacancies, None
         elif sj_api:
             sj_vacancies = sj_api.get_vacancies(search_query)
